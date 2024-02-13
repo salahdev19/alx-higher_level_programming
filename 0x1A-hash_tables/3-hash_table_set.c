@@ -34,6 +34,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		tmp = ht->array[i];
 		while (tmp && strcmp(tmp->key, new->key) != 0)
 			tmp = tmp->next;
-		if (tmp)
-		{
 
